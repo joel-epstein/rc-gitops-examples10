@@ -5,7 +5,7 @@ import (
 )
 
 globals: gsl.#DefaultContext & {
-	edge_host: "20.85.188.97:10809"
+	edge_host: "40.88.240.210:10809"
 	namespace: "examples"
 	
 	// Please contact your mesh administrators as to what
