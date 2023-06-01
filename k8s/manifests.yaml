@@ -13,6 +13,7 @@ spec:
     metadata:
       labels:
         greymatter.io/cluster: examples-edge
+        greymatter.io/workload: gm-operator.greymatter.examples-edge
     spec:
       hostPID: true # for spire host mount
       containers:
