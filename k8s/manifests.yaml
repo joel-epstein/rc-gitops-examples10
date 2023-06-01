@@ -8,12 +8,12 @@ spec:
   selector:
     matchLabels:
       greymatter.io/cluster: examples-edge
-      greymatter.io/workload: gm-operator.greymatter.examples-edge
+      greymatter.io/workload: gm-operator.greymatter-mesh.examples-edge
   template:
     metadata:
       labels:
         greymatter.io/cluster: examples-edge
-        greymatter.io/workload: gm-operator.greymatter.examples-edge
+        greymatter.io/workload: gm-operator.greymatter-mesh.examples-edge
     spec:
       hostPID: true # for spire host mount
       containers:
