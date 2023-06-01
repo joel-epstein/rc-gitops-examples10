@@ -24,7 +24,10 @@ Edge: gsl.#Edge & {
 	owner:             "Examples"
 	capability:        ""
 	health_options: {
-		tls: gsl.#MTLSUpstream
+		spire: gsl.#SpireUpstream & {
+			#context: context.SpireContext
+			#subjects: ["greymatter-datastore"]
+		}
 	}
 	ingress: {
 		// Edge -> HTTP ingress to your container
