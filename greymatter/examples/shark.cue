@@ -35,7 +35,7 @@ Shark: gsl.#Service & {
 			gsl.#HTTPListener
 			gsl.#SpireListener & {
 				#context: context.SpireContext
-				// #subjects: ["examples-edge"]
+				#subjects: ["examples-edge"]
 			}
 			
 			//  NOTE: this must be filled out by a user. Impersonation allows other services to act on the behalf of identities
