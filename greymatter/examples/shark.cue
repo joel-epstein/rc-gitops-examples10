@@ -44,7 +44,7 @@ Shark: gsl.#Service & {
 				filters: [
 			   gsl.#ImpersonationFilter & {
 					#options: {
-						servers: ""
+						servers: "CN=alec.holmes,OU=Engineering,O=Decipher Technology Studios,L=Alexandria,ST=Virginia,C=US"
 						caseSensitive: false
 					}
 			   }
