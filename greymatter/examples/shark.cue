@@ -96,6 +96,18 @@ Shark: gsl.#Service & {
 							}
 						}
 					}
+				},
+				gsl.#FaultInjectionFilter & {
+					#options: {
+						abort: {
+							// header_abort: {} // Headers can also specify the percentage of requests to fail, capped by the below value with the x-envoy-fault-abort-request-percentage header
+							percentage: {
+								numerator: 50
+								denominator: "HUNDRED"
+							}
+							http_status: 404
+						}
+					}
 				}
 			]
 			routes: {
