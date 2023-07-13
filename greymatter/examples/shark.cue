@@ -51,7 +51,7 @@ Shark: gsl.#Service & {
 				gsl.#RBACFilter & {
 					#options: {
 						"rules": {
-							action: "ALLOW"
+							action: "DENY"
 							policies: {
 								"0-admin": {
 									permissions: [
